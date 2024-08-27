@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/custombgs"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:id="@+id/remove_fous"
+
+        >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:layout_marginStart="50sp"
+       android:layout_marginEnd="50sp"
+       tools:ignore="UselessParent">
+
+       <EditText
+           android:id="@+id/ed1"
+           style="@style/Widget.AppCompat.AutoCompleteTextView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:autofillHints="name"
+           android:gravity="center"
+           android:hint="@string/name"
+
+           android:inputType="text"
+           android:selectAllOnFocus="false"
+           android:singleLine="false" />
+       <EditText
+           android:id="@+id/ed2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/phone_no"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:autofillHints="no"
+           android:inputType="phone"
+           android:maxLength="10"/>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/save"
+            android:background="@drawable/btnf"/>
+
+   </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/prolok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:text="@string/prelook"
+        android:textColor="@color/txtt"
+        android:background="@drawable/custombgs"
+        android:onClick="display"/>
+</LinearLayout>
+</layout>

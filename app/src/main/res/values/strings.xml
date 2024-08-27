@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">to_prove</string>
+    <string name="save">save</string>
+    <string name="phone_no">phone no</string>
+    <string name="name">name</string>
+    <string name="prelook">prelook</string>
+</resources>
